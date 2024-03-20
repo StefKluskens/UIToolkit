@@ -1,0 +1,72 @@
+:root {
+	justify-content: center;
+	align-items: center;
+	--border-width: 4px;
+	--orange-background: #ff8c00;
+}
+
+.container{
+
+}
+
+/*Common class that can be used for anything that needs a border*/
+.bordered-box{
+	border-width: var(--border-width);
+	border-color: white;
+	border-radius: 15px;
+
+}
+
+.view-box{
+	width: 500px;
+	height: 350px;
+}
+
+.control-box{
+	flex-direction: row;
+
+	margin-top: 10px;
+	width: 500px;
+
+	padding: 10px;
+}
+
+/*Styles all buttons in the control box class*/
+.control-box Button{
+	width: 70px;
+	height: 70px;
+	background-color: var(--orange-background);
+	border-width: var(--border-width);
+	border-color: white;
+
+	/*Allows for all style elements to transition in 0.25s*/
+	transition: 0.25s all;
+
+	color: white;
+	-unity-font-style: bold;
+}
+
+/*Pseudo-selector*/
+.control-box Button:hover{
+    background-color: orange;
+	border-radius: 10px;
+	scale: 1.1;
+}
+
+.control-box Slider{
+	/*Allow element to take up the remaining space*/
+	flex-grow: 1;
+}
+
+.unity-base-slider__dragger{
+	height: 35px;
+	width: 35px;
+
+	border-radius: 50px;
+
+	background-color: var(--orange-background);
+	border-width: var(--border-width);
+	border-color: white;
+
+	margin-top: -16px;
+}
