@@ -1,0 +1,26 @@
+:root {
+    justify-content: center;
+    align-items: center;
+    --button-color-standard: #800080;
+    --button-color-hover: #b300b3;
+}
+
+.start-container
+{
+    width: 50%;
+}
+
+.start-container Button {
+    height: 50px;
+    -unity-font-style: bold;
+    color: white;
+    background-color: var(--button-color-standard);
+
+    border-radius: 10px;
+}
+
+.start-container Button:hover{
+    background-color: var(--button-color-hover);
+
+    border-radius: 20px;
+}
